@@ -1,10 +1,10 @@
 from Tkinter import *
-from Window import *
+from window import *
 
 def main():
 	root = Tk()
 	root.geometry("250x150+300+300")
-	app = Window(root)
+	app = window(root)
 	root.mainloop()
 
 if __name__ == '__main__':
