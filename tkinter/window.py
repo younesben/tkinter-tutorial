@@ -1,6 +1,6 @@
 from Tkinter import *
 
-class Window(Frame):
+class window(Frame):
 
 	def __init__(self, parent):
 		Frame.__init__(self, parent, background = "white")
