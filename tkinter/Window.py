@@ -56,7 +56,9 @@ class Window(Frame):
 	def style(self):
 		self.style = Style()
 		self.style.theme_use("default")
-
+        
+        
+    # Function that creates the window
 def Main():
 	# Main window is created. Must be created before any widgets
 	root = Tk()
