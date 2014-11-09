@@ -20,11 +20,31 @@ class Buttons(Frame):
         # Set the style of the window
         self.style()
         
+        # Creating another
+        
     # Styling the window    
     def style(self):
         self.style = Style()
         self.style.theme_use("default")
         
+        # New Frame widget that expands the entire window
+        # Relief = border decoration
+        frame = Frame(self, relief = RAISED, borderwidth = 1)
+        
+        # Pack organizes widgets in horizontal and vertical boxes
+        frame.pack(fill = BOTH, expand = 1)
+        
+        self.pack(fill = BOTH, expand = 1)
+        
+        # Button takes parent widget and options
+        close_button = Button(self, text = "Close")
+        
+        # Put in horizontal box to the right, add space between widget and borders of frame
+        close_button.pack(side = RIGHT, padx = 5, pady = 5)
+        
+        # Ok Button
+        ok_button = Button(self, text = "OK")
+        ok_button.pack(side = RIGHT)
         
     
 #################### Main function ####################
