@@ -17,11 +17,13 @@ class Buttons(Frame):
         
     # Initialize the UI
     def initUI(self):
+        # Set the style of the window
         self.style()
         
     # Styling the window    
     def style(self):
         self.style = Style()
+        self.style.theme_use("default")
         
         
     
