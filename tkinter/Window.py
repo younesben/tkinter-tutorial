@@ -6,10 +6,8 @@ class Window(Frame):
 
 	# Constructor
 	def __init__(self, parent):
-		'''
-		Calling the constructor method of the inherited class. background specifies
-		the color of the Frame widget
-		'''
+		# Calling the constructor method of the inherited class
+        # Background specifies the color of the Frame widget
 		Frame.__init__(self, parent)
 
 		# Instance variables of the class
