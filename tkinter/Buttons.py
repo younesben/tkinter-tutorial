@@ -15,19 +15,15 @@ class Buttons(Frame):
         # Initialize the window
         self.initUI()
         
+        
     # Initialize the UI
     def initUI(self):
         # Set the style of the window
         self.style()
         
-        # Creating another
+        self.parent.title("Buttons")
         
-    # Styling the window    
-    def style(self):
-        self.style = Style()
-        self.style.theme_use("default")
-        
-        # New Frame widget that expands the entire window
+        # Creating another Frame widget that expands the entire window
         # Relief = border decoration
         frame = Frame(self, relief = RAISED, borderwidth = 1)
         
@@ -45,6 +41,13 @@ class Buttons(Frame):
         # Ok Button
         ok_button = Button(self, text = "OK", command = self.ok_button_press)
         ok_button.pack(side = RIGHT)
+        
+        
+    # Styling the window    
+    def style(self):
+        self.style = Style()
+        self.style.theme_use("default")
+        
         
     def ok_button_press(self):
         print "Hello, Laura"
