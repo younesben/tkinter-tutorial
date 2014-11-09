@@ -37,14 +37,17 @@ class Buttons(Frame):
         self.pack(fill = BOTH, expand = 1)
         
         # Button takes parent widget and options
-        close_button = Button(self, text = "Close")
+        close_button = Button(self, text = "Close", command = self.quit)
         
         # Put in horizontal box to the right, add space between widget and borders of frame
         close_button.pack(side = RIGHT, padx = 5, pady = 5)
         
         # Ok Button
-        ok_button = Button(self, text = "OK")
+        ok_button = Button(self, text = "OK", command = self.ok_button_press)
         ok_button.pack(side = RIGHT)
+        
+    def ok_button_press(self):
+        print "Hello, Laura"
         
     
 #################### Main function ####################
