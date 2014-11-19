@@ -60,17 +60,33 @@ class Calculator(Frame):
         seven_button = Button(self, text = "7");
         seven_button.grid(row = 2, column = 0);
         
-        # 7 button
+        # 8 button
         eight_button = Button(self, text = "8");
         eight_button.grid(row = 2, column = 1);
         
-        # 7 button
+        # 9 button
         nine_button = Button(self, text = "9");
         nine_button.grid(row = 2, column = 2);
         
-        # 7 button
+        # Division button
         division_button = Button(self, text = "/");
         division_button.grid(row = 2, column = 3);
+        
+        # 4 button
+        four_button = Button(self, text = "4");
+        four_button.grid(row = 3, column = 0);
+        
+        # 5 button
+        five_button = Button(self, text = "5");
+        five_button.grid(row = 3, column = 1);
+        
+        # 6 button
+        six_button = Button(self, text = "6");
+        six_button.grid(row = 3, column = 2);
+        
+        # Multiplication button
+        multiply_button = Button(self, text = "*");
+        multiply_button.grid(row = 3, column = 3);
                 
         # Show the fram widget and gives it an initial size
         self.pack()
