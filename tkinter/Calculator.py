@@ -87,6 +87,23 @@ class Calculator(Frame):
         # Multiplication button
         multiply_button = Button(self, text = "*");
         multiply_button.grid(row = 3, column = 3);
+        
+        # 1 button
+        one_button = Button(self, text = "1");
+        one_button.grid(row = 4, column = 0);
+        
+        # 2 button
+        two_button = Button(self, text = "2");
+        two_button.grid(row = 4, column = 1);
+        
+        # 3 button
+        three_button = Button(self, text = "3");
+        three_button.grid(row = 4, column = 2);
+        
+        # Minus button
+        minus_button = Button(self, text = "-");
+        minus_button.grid(row = 4, column = 3);
+        
                 
         # Show the fram widget and gives it an initial size
         self.pack()
