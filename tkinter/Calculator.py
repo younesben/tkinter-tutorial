@@ -22,6 +22,7 @@ class Calculator(Frame):
         # Set the style of the window
         self.style()
         
+        # Set title
         self.parent.title("Calculator")
         
         # Add padding to columns
@@ -54,6 +55,22 @@ class Calculator(Frame):
         # Close button
         close_button = Button(self, text = "Close")
         close_button.grid(row = 1, column = 3)
+        
+        # 7 button
+        seven_button = Button(self, text = "7");
+        seven_button.grid(row = 2, column = 0);
+        
+        # 7 button
+        eight_button = Button(self, text = "8");
+        eight_button.grid(row = 2, column = 1);
+        
+        # 7 button
+        nine_button = Button(self, text = "9");
+        nine_button.grid(row = 2, column = 2);
+        
+        # 7 button
+        division_button = Button(self, text = "/");
+        division_button.grid(row = 2, column = 3);
                 
         # Show the fram widget and gives it an initial size
         self.pack()
